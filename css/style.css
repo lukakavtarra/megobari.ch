@@ -1,0 +1,665 @@
+/* Get Fonts */
+@font-face {
+    font-family: MontLight;
+    src: url('../fonts/mont/Mont-ExtraLightDEMO.otf');
+}
+@font-face {
+    font-family: MontHeavy;
+    src: url('../fonts/mont/Mont-HeavyDEMO.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+.salesSection {
+    display: flex;
+    justify-content: center;
+    background:rgba(17, 52, 111, 1);
+    padding: 0.7rem;
+}
+
+.salesSection p {
+    margin: 0 1rem;
+    color: white;
+    font-family: MontHeavy;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+}
+
+/* Nav Bar */
+#navBar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 253, 255, 0.8);
+    justify-content: space-between;
+    padding: 12px 100px;
+}
+
+#navBar a:first-child{
+    color:rgba(33, 55, 134, 1);
+    font-family: MontHeavy;
+    display: flex;
+}
+
+#navBar a img {
+    width:10.28px ;
+    height: 10.18px;
+}
+
+#pages {
+    display: flex;
+}
+
+#pages a:first-child {
+    font-family: MontHeavy !important;
+    font-size: 16px !important;
+}
+
+#pages a {
+    font-family: MontLight;
+    font-weight: 900;
+    color: #11346F;
+    margin: 0 30px ;
+}
+
+#pages a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    opacity: 0.85;
+}
+
+/* button Styling */
+
+#navBar button {
+    background: #197AFF;
+    border: none;
+    border-radius: 60px;
+    padding: 1rem 2rem;
+    color: white;
+    font-family: MontHeavy;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+#navBar button:hover {
+    opacity: 0.85;
+}
+
+body {
+    width: 100%;
+}
+/* Main body styling */
+.mainBody {
+    padding:63px 100px ;
+}
+h1 {
+    color: rgba(33, 55, 134, 1) ;
+    font-family: MontHeavy;
+    display: flex;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    font-size: 42px;
+}
+
+h1 .magic {
+    margin-left:0.3rem ;
+    color: #197AFF;
+    display: flex;
+    margin-bottom: 23px;
+}
+
+h1 .magic img{
+    position: relative;
+    top: -1rem;
+    right: 1rem;
+    width: 90%;
+}
+
+#responsiveImage {
+    display: none;
+}
+
+.responsiveShow {
+    display: none;
+}
+
+.aboutUs {
+    display: flex;
+    gap: 15rem;
+    margin-top: 88px;
+
+}
+
+h1 .magic::after{
+    content: url(../icons/Arrow\ 4.png);
+    position: relative;
+}
+
+.mainBody p {
+    max-width: 731px;
+    font-family: MontLight;
+    font-size: 18px;
+}
+
+#offerBox {
+    display: inline-flex;
+    border:0.1px solid rgba(174, 204, 255, 0.5);
+    background-color: rgba(174, 204, 255, 0.1);
+    border-radius: 10px;
+    padding: 17px 1px;
+    margin-top: 26px;
+    margin-bottom: 52px;
+}
+
+#offerBox div {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    border-left:0.1px solid rgba(206, 226, 255, 1);
+    margin-right: 22px;
+    line-height:    1.5rem ;
+}
+
+#offerBox div h3 {
+    font-size: 14px;
+    color: #11346F;
+    font-family: MontHeavy;
+}
+
+#offerBox div:first-child {
+    border-left: none;
+}
+
+#offerBox ul {
+    list-style-position: inside;
+}
+
+#offerBox ul li{
+    color: #262626;
+    font-family: MontLight;
+    font-size: 12px;
+    text-indent: -2em;
+}
+/* main lower body */
+#mainLowerBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10rem;
+}
+#mainLowerBodyButtons {
+    display: grid;
+    justify-items: center;
+}
+
+#mainLowerBody #getMassageBtn {
+    background: #197AFF;
+    border: none;
+    border-radius: 60px;
+    padding: 1rem 4rem;
+    color: white;
+    font-family: MontHeavy;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+#mainLowerBody #getMassageBtn sup {
+    font-family: MontLight;
+}
+#mainLowerBody #getMassageBtn:hover {
+    opacity: 0.85;
+}
+
+#mainLowerBody #bundles {
+    background: rgba(77, 145, 207, 0.15);
+    border: none;
+    border-radius: 60px;
+    padding: 0.5rem 2rem;
+    font-family: MontLight;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    margin-top: 18px;
+}
+#mainLowerBody #bundles sup {
+    font-family: MontLight;
+}
+#mainLowerBody #bundles:hover {
+    opacity: 0.85;
+}
+
+i.fa-star {
+    color: rgba(246, 198, 68, 1);
+}
+
+#customer {
+    display: flex;
+    gap: 2rem;
+}
+
+#mainLowerReview {
+    display: flex;
+    gap:16px;
+    border:solid rgba(174, 204, 255, 0.5);
+    border-radius: 110px;
+    padding: 11px 10px;
+    margin-top: 90px;
+}
+#mainLowerReview img{
+    width: 64px;
+    height: 64px;
+}
+
+#aboutCustomer {
+    display: grid;
+}
+#aboutCustomer p {
+    max-width: 222px;
+    font-family: MontLight;
+    font-size: 12px;
+    font-weight: 900;
+}
+.stars {
+    display: flex;
+}
+.stars p {
+    color: rgba(120, 121, 121, 1);
+}
+.verified {
+    display: flex;
+    color: #197AFF
+}
+
+/* features */
+
+#features .salesSection div {
+    display: flex;
+    align-items: center;
+
+}
+
+#features .salesSection div img {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 8px;
+}
+
+/* chrome scroll hide */
+::-webkit-scrollbar {
+    display: none;
+}
+#features {
+    background:linear-gradient(to right, rgba(174, 204, 255, 1), rgba(25, 122, 255, 1)) ;
+    padding-bottom: 10rem;
+
+}
+
+#features h2 {
+    font-size: 37px;
+    margin-top: 29px;
+    text-align: center;
+    color: rgba(17, 52, 111, 1);
+    font-family: MontLight;
+}
+
+#features h3 {
+    font-size: 37px;
+    text-align: center;
+    color: white;
+    font-family: MontHeavy; 
+    display: grid;
+    justify-items: center;
+}
+
+ #purchases {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+    padding: 1rem;
+    gap: 1rem;
+ }
+
+ #purchases .box {
+    border:2px solid #197AFF;
+    background: #F6F8FC;
+    border-radius: 18px;
+    display: grid;
+    justify-items: center;
+ }
+
+ .first-box {
+   opacity:0.8;
+ }
+
+ .first-box .offer {
+    padding-top: 10px;
+    /* padding-bottom: 0; */
+
+ }
+ #purchases .box h4 {
+    color: #11346F;
+    font-family: MontHeavy;
+    font-size: 28px;
+    margin-bottom: 18px
+ }
+
+ #purchases .box .purchaseImage {
+    position: relative;
+    top: -1rem;
+    height: 100px;
+    
+ }
+ #purchases .box:hover {
+    opacity: 70%;
+ }
+ .price,
+ .oldPrice {
+    font-size: 32px;
+    color: #11346F;
+    font-family: MontHeavy;
+ }
+
+ .oldPrice {
+   opacity: 0.4;
+   text-decoration: line-through;
+ }
+
+ .wholePrice {
+    display: flex;
+    gap: 3rem;
+ }
+
+ .shipping {
+    color: #11346F;
+    font-family: MontHeavy;
+    font-size: 13px;
+    margin-bottom: 33px;
+ }
+
+ .garantyMoneyBack {
+    display: flex;
+    gap: 1rem;
+    font-family: MontHeavy;
+    font-size: 12px;
+    color: #11346F;
+    align-items: center;
+    margin-bottom: 40px;
+ }
+
+ .offer {
+    padding: 9px 30px 15px 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+ }
+
+ 
+ .afterpay {
+    display: flex;
+    font-family: MontHeavy;
+    align-items: center;
+    color: rgba(17, 52, 111, 1);
+    gap: 6px;
+    margin-bottom: 50px;
+ }
+ .afterpay .afterpaySpan {
+    align-items: center;
+    padding: 13px 5px;
+    background: #BCF5E3;
+    border-radius:40px ;
+    display: flex;
+ }
+.afterpay .afterpayCost {
+    color: black;
+}
+ .offer button {
+    display: grid;
+    background: #197AFF;
+    border: none;
+    border-radius: 60px;
+    padding: 2rem 2rem;
+    color: white;
+    font-family: MontHeavy;
+    letter-spacing: 0.1rem;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 1px 6px 20px 3px rgb(25 122 255 / 50%);
+}
+
+.payments {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.popular {
+    background-color: #57AC73;
+    border-radius: 50px;
+    padding: 6px 16px;
+    color: white;
+    margin: 10px 0 20px 0;
+}
+
+.saving {
+    display: grid;
+    grid-template-columns: 5, 1fr;
+    grid-template-rows: 5, 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: solid rgba(174, 204, 255, 1);
+    border-radius: 18px;
+    color:#11346F ;
+    margin-bottom: 50px;
+}
+.saveOffandMoneyBack {
+    display: flex;
+    border: solid rgba(174, 204, 255, 1);
+    border-radius: 11px;
+}
+.saving .saveoff {
+    display: grid;
+    align-items: center;
+    border: solid rgba(153, 210, 152, 1);
+    background: rgba(191, 245, 190, 1);
+    border-radius: 9px;
+    padding: 1rem;
+    position: relative;
+    left: -4px;
+
+}
+
+.saving .garantyMoneyBack {
+     display: flex;   
+     margin: 0;
+     align-items: center;
+     padding: 1rem;
+}
+
+.saving .remainings {
+    text-align: center;
+    font-size: 13px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* best Value box */
+
+.best {
+    background-color: rgba(172, 87, 128, 1);
+    border-radius: 50px;
+    padding: 6px 16px;
+    margin: 10px 0 20px 0;
+    color: white;
+}
+
+
+/* reviews page */
+
+#reviews {
+    padding-bottom: 10rem;
+    background-color: rgba(246, 248, 252, 1);
+}
+
+#reviews h2 {
+    font-size: 37px;
+    color: rgba(33, 55, 134, 1);
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+#reviews h2 span {
+    margin-left:0.3rem ;
+    color: #197AFF;
+    display: grid;
+}
+
+#reviews h2 span img{
+    position: relative;
+    top: -1rem;
+    right: 1rem;
+    margin-top: 13px;
+    width: 90%;
+}
+
+#reviews .stars p {
+    color: #11346F;
+}
+
+#reviewBody {
+    padding: 54px 102px;
+}
+#reviewCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.card {
+    max-width: 325px;
+    border-radius: 18px;
+    background: white;
+    width: 325px;
+}
+.card img {
+    width: 100%;
+}
+.card * {
+    margin-bottom: 10px;
+}
+.reviewText {
+    font-family: MontLight
+}
+
+.nameOfReview {
+    color: #11346F;
+}
+
+.reviewverifiedBuyer {
+    display: flex;
+    justify-content: space-between;
+}
+.reviewverifiedBuyer div {
+    display: flex;
+    color: rgba(137, 194, 95, 1);
+    gap: 8px;
+    align-items: center;
+}
+
+#reviewHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#reviewHead #writeReview{
+    border: 1.6px solid rgba(58, 48, 117, 1);
+    font-family: MontLight;
+    color: rgba(58, 48, 117, 1);
+    font-size: 14px;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    background: rgba(246, 248, 252, 1);
+    cursor: pointer;
+}
+
+#reviewHead #writeReview:hover{
+    background: rgb(211, 217, 230);
+}
+
+.reviewInfo {
+    padding: 1rem;
+}
+
+/* faq body */
+#faq {
+    background: #11346F;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 17rem;
+}
+#faq h2 {
+    font-size: 37px;
+    font-family: MontLight;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+#faq h2 span {
+    margin-left:0.3rem ;
+    display: grid;
+    font-family: MontHeavy;
+
+}
+
+#faq h2 span img{
+    position: relative;
+    top: -1rem;
+    right: 1rem;
+    margin-top: 13px;
+    width: 90%;
+}
+.faqTextDiv {
+    margin-bottom: 31.7px;
+}
+.faqTextSmall {
+    display: flex;
+    align-items: center;
+    width: 45rem;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: MontLight !important;
+    border: solid rgba(25, 64, 129, 1);
+    border-radius: 9px;
+    background: rgba(49, 84, 142, 1);
+    cursor: pointer;
+}
+
+.aboutUsFaq {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 13rem !important;
+}
+
+.aboutUsFaq img {
+    object-fit: contain;
+}
+.faqTextMore p {
+    border: 0.1px solid rgba(49, 84, 142, 1);
+    padding: 1rem;
+    border-radius: 0 0px 9px 9px;
+    position: relative;
+    top: -5px;
+    background: #11346F;
+    z-index: 2;
+}
+
+#seeAll:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}

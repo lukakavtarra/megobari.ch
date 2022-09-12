@@ -1,0 +1,230 @@
+@media only screen and (max-width:415px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative;
+      }
+    #navBar {
+        display: none;
+    }
+    h1 {
+        display: grid;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-size: 23px;
+    }
+
+    h1 .magic img {
+        right: 0;
+        top: 0rem;
+    }
+
+    h1 .magic::after{
+        content: url(../icons/responsive\ arrow.png);
+        position: relative;
+    }
+    
+    .headerTextDiv {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    #responsiveImage {
+        display: block;
+        width: 13rem;
+        object-fit: contain;
+    }
+
+    .responsiveShow {
+        display: block;
+    }
+
+    #fullImage, .responsiveHide {
+        display: none;
+    }
+
+    .mainBody {
+        padding: 13px 17px;
+    }
+
+    .mainBody p {
+        font-size: 14px;
+    }
+
+    .mainBody p span {
+        display: none;
+    }
+    
+
+    #offerBox ul li {
+        display: none;
+    }
+
+    #offerBox div, #offerBox {
+        border: none;
+        background: none;
+    }
+    #offerBox div h3 {
+        font-size: 12px;
+    }
+
+    .aboutUs {
+        display: block;
+        margin: 0;
+    }
+    #aboutUsInfo p {
+        text-align: center;
+    }
+
+    #mainLowerBody {
+        display: grid;
+        margin: 0;
+    }
+
+    #mainLowerReview {
+        margin-top: 10px;
+
+    }
+
+    #aboutCustomer p {
+        font-size: 11px;
+    }
+
+    #mainLowerBody #getMassageBtn {
+        padding: 1rem 2rem;
+    }
+
+    #mainLowerBody #getMassageBtn sup{
+        display: none;
+
+    }
+
+    .salesSection p {
+        font-size: 12px;
+        margin: 0 0.4rem;
+    }
+
+    /* end of first section */
+
+    #freeShipping {
+        display: none !important;
+    }
+
+    #features .salesSection div {
+        display: grid;
+        justify-items: center;
+    }
+
+    .salesSection div p{
+        font-size:12px;
+        text-align: center;
+    }
+    
+    #purchases {
+        display: grid;
+    }
+
+    .afterpay {
+        font-size: 9px;
+        margin: 0;
+    }
+    .afterpaySpan {
+        padding: 0 !important;
+    }
+
+    .saving {
+        margin-bottom: 1rem;
+    }
+
+    .saving .remainings {
+        padding: 0.5rem;
+    }
+
+    .saving .garantyMoneyBack {
+        padding: 0.5rem 2rem;
+    }
+
+    .saving .saveoff {
+        padding: 0.5rem;
+    }
+
+    .saving * {
+        font-size: 10px
+    }
+    .offer {
+        padding:0 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .offer button {
+        padding: 0.7rem 2rem;
+    }
+
+    /* end of offer */
+
+    #reviewBody {
+        padding: 0;
+    }
+
+    #reviewCard {
+        padding: 3rem;
+        justify-items: center;
+        overflow-x: auto;
+    }
+    .reviewText {
+        width: 17rem;
+    }
+
+    #reviews h2 {
+        font-size: 30px;
+        display: grid;
+        justify-items: center;
+    }
+    #reviewHead {
+        padding: 0 3rem;
+    }
+    #reviewHead #writeReview {
+        font-size: 10px;
+        padding: 0rem 2rem;
+    }
+
+    /* end of reviews */
+    #faq h2 {
+        display: grid;
+        justify-items: center;
+    }
+    .faqTextSmall {
+        width: auto;
+    }
+
+    .aboutUsFaq img {
+        margin-bottom: 3rem        
+    }
+
+    .aboutUsFaq {
+        padding: 2rem;
+    }
+
+    #faq {
+        padding-bottom: 0rem !important;
+    }
+
+    #seeAll {
+        text-align: center;
+    }
+
+    .roundbutton.responsiveShow {
+        width: 25px;
+        height: 25px;
+        background: rgba(203, 206, 214, 1);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .scrollableButtons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
