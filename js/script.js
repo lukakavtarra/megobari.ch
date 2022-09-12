@@ -13,3 +13,13 @@ const showUsMore = (item) => {
 }
 
 // SCROLLABLE BUTTONS FOR CARD FLEXBOX
+
+const scrollCard = (size) => {
+    const getScrolls = document.getElementById('reviewCard').scrollLeft = size.title;
+    const getAllButtons = size.parentNode.querySelectorAll('.roundbutton');
+    getAllButtons.forEach(item => {
+        item.style.backgroundColor = 'rgba(203, 206, 214, 1)'
+    })
+    size.style.backgroundColor = '#197AFF'
+
+}
